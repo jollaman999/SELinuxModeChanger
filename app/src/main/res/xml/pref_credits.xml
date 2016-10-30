@@ -7,6 +7,13 @@
             android:summary="@string/credits_author_summary"/>
     </PreferenceCategory>
 
+    <PreferenceCategory android:title="@string/category_modifier">
+        <Preference
+            android:key="modifier"
+            android:title="jollaman999"
+            android:summary="https://github.com/jollaman999"/>
+    </PreferenceCategory>
+
     <PreferenceCategory android:title="@string/category_source_code">
         <Preference
             android:key="github"

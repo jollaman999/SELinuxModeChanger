@@ -51,6 +51,9 @@ public class CreditsActivity extends AppCompatActivity {
                 case "author":
                     getActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/MrBIMC")));
                     return true;
+                case "modifier":
+                    getActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/jollaman999")));
+                    return true;
                 case "github":
                     getActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/mrbimc/SELinuxModeChanger")));
                     return true;

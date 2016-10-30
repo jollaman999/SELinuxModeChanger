@@ -14,6 +14,7 @@
     <string name="close">Zavrieť</string>
     <string name="about">O aplikácii</string>
     <string name="category_author">Autor</string>
+    <string name="category_modifier">Modificador</string>
     <string name="credits_author_summary">Nápad a tvorba</string>
     <string name="category_source_code">Zdrojový kód</string>
     <string name="category_licences">Licencie</string>
