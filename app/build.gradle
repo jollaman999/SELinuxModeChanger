@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 25
+    buildToolsVersion "25"
 
     defaultConfig {
         applicationId "com.mrbimc.selinux"
         minSdkVersion 18
-        targetSdkVersion 22
+        targetSdkVersion 25
         versionCode 42
         versionName "3.2"
     }
@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.android.support:appcompat-v7:25.0.0'
     compile files('libs/RootTools-3.3.jar')
 }
