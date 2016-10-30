@@ -27,11 +27,10 @@ public class SELinuxBroadcastReceiver extends BroadcastReceiver {
     public static void enforce(final Context context) {
         Command command = new Command(0, "/system/bin/setenforce 1") {
             @Override
-            public void commandCompleted(int arg0, int arg1) { notifyStateChanged(context, ENFORCING); }
-            @Override
-            public void commandOutput(int i, String s) {}
-            @Override
-            public void commandTerminated(int i, String s) {}
+            public void output(int id, String line) {
+                super.output(id, line);
+                notifyStateChanged(context, ENFORCING);
+            }
         };
         executeCommand(command, context);
     }
@@ -39,11 +38,10 @@ public class SELinuxBroadcastReceiver extends BroadcastReceiver {
     public static void permiss(final Context context){
         Command command = new Command(0, "/system/bin/setenforce 0") {
             @Override
-            public void commandCompleted(int arg0, int arg1) { notifyStateChanged(context, PERMISSIVE);}
-            @Override
-            public void commandOutput(int i, String s) {}
-            @Override
-            public void commandTerminated(int i, String s) {}
+            public void output(int id, String line) {
+                super.output(id, line);
+                notifyStateChanged(context, PERMISSIVE);
+            }
         };
         executeCommand(command, context);
     }

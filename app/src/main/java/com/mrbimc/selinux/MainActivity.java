@@ -89,27 +89,24 @@ public class MainActivity extends AppCompatActivity {
             public void output(int id, String line) {
                 super.output(id, line);
                 status = line.contains(getString(R.string.selinux_enforcing)) ? 0 : line.contains(getString(R.string.selinux_permissive)) ? 1 : 2;
-            }
 
-            @Override
-            public void commandCompleted(int id, int exitcode) {
-                switch (status) {
-                    case 0:
-                        setEnforcing(null);
-                        break;
-                    case 1:
-                        setPermissive(null);
-                        break;
-                    case 2:
-                        setUndefined();
-                        break;
-                }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        switch (status) {
+                            case 0:
+                                setEnforcing(null);
+                                break;
+                            case 1:
+                                setPermissive(null);
+                                break;
+                            case 2:
+                                setUndefined();
+                                break;
+                        }
+                    }
+                });
             }
-
-            @Override
-            public void commandOutput(int id, String line) {}
-            @Override
-            public void commandTerminated(int i, String s) {}
         };
         try { RootTools.getShell(true).add(command); } catch (Exception e) { e.printStackTrace(); }
     }
