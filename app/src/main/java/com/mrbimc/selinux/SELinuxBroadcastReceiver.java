@@ -9,8 +9,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.stericson.RootTools.RootTools;
-import com.stericson.RootTools.execution.Command;
+import com.stericson.roottools.RootTools;
+import com.stericson.rootshell.execution.Command;
 
 public class SELinuxBroadcastReceiver extends BroadcastReceiver {
 

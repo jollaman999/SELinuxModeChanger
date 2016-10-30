@@ -14,8 +14,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
-import com.stericson.RootTools.RootTools;
-import com.stericson.RootTools.execution.Command;
+import com.stericson.roottools.RootTools;
+import com.stericson.rootshell.execution.Command;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             int status = 2;
 
             @Override
-            protected void output(int id, String line) {
+            public void output(int id, String line) {
                 super.output(id, line);
                 status = line.contains(getString(R.string.selinux_enforcing)) ? 0 : line.contains(getString(R.string.selinux_permissive)) ? 1 : 2;
             }
