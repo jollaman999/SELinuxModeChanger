@@ -55,7 +55,7 @@ public class CreditsActivity extends AppCompatActivity {
                     getActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/jollaman999")));
                     return true;
                 case "github":
-                    getActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/mrbimc/SELinuxModeChanger")));
+                    getActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/jollaman999/SELinuxModeChanger")));
                     return true;
                 case "gpl3":
                     showDialog(getString(R.string.gpl3), "file:///android_asset/gpl3.txt");

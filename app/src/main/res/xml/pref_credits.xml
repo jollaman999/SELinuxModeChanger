@@ -18,7 +18,7 @@
         <Preference
             android:key="github"
             android:title="@string/app_name"
-            android:summary="https://github.com/mrbimc/SELinuxModeChanger"/>
+            android:summary="https://github.com/jollaman999/SELinuxModeChanger"/>
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/category_licences">
