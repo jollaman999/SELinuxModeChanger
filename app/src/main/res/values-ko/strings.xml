@@ -15,7 +15,7 @@
     <string name="about">정보</string>
     <string name="category_author">만든이</string>
     <string name="category_modifier">수정자</string>
-    <string name="credits_author_summary">아이디러와 창조</string>
+    <string name="credits_author_summary">아이디어와 창조</string>
     <string name="category_source_code">소스 코드</string>
     <string name="category_licences">라이센스</string>
 </resources>
