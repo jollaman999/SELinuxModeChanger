@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void output(int id, String line) {
                 super.output(id, line);
-                status = line.contains(getString(R.string.selinux_enforcing)) ? 0 : line.contains(getString(R.string.selinux_permissive)) ? 1 : 2;
+                status = line.contains("Enforcing") ? 0 : line.contains("Permissive") ? 1 : 2;
 
                 runOnUiThread(new Runnable() {
                     @Override
