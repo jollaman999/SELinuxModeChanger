@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selinux_select_mode">SELinux 모드를 선택하십시오</string>
+    <string name="selinux_enforcing">시행</string>
+    <string name="selinux_permissive">허가</string>
+    <string name="selinux_disabled">기기에 SELinux 가 없거나 비활성화 되어있는것 같습니다.</string>
+    <string name="selinux_unreachable">SELinux 에 접근할 수 없습니다.</string>
+    <string name="selinux_set_to_enforcing">SELinux 모드가 시행으로 변경되었습니다.</string>
+    <string name="selinux_set_to_permissive">SELinux 모드가 허가로 변경되었습니다.</string>
+    <string name="no_root_access">루트 권한을 얻는데 실패하였습니다</string>
+    <string name="no_root_access_summary">슈퍼유저 관리자가 앱이 SU 에 액세스 하는데 허용되지 않았거나 루팅이 되어있지 않습니다.</string>
+    <string name="notify_on_mode_change">모드 변경 후 알림을 표시합니다.</string>
+    <string name="ok">확인</string>
+    <string name="close">닫기</string>
+    <string name="about">정보</string>
+    <string name="category_author">만든이</string>
+    <string name="category_modifier">수정자</string>
+    <string name="credits_author_summary">아이디러와 창조</string>
+    <string name="category_source_code">소스 코드</string>
+    <string name="category_licences">라이센스</string>
+</resources>

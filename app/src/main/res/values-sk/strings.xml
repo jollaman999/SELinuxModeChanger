@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">SELinuxModeChanger</string>
-    <string name="selinux_select_mode">Vyberte režim SELinux:</string>
+    <string name="selinux_select_mode">Vyberte režim SELinux</string>
     <string name="selinux_enforcing">Vynútený</string>
     <string name="selinux_permissive">Prípustný</string>
     <string name="selinux_disabled">Zdá sa, že nemáte SELinux, alebo je zakázaný</string>

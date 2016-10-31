@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">SELinuxModeChanger</string>
+    <string name="app_name" translatable="false">SELinuxModeChanger</string>
 
-    <string name="selinux_select_mode">Select SELinux mode:</string>
+    <string name="selinux_select_mode">Select SELinux mode</string>
     <string name="selinux_enforcing">Enforcing</string>
     <string name="selinux_permissive">Permissive</string>
 
@@ -26,7 +26,7 @@
     <string name="category_source_code">Source Code</string>
     <string name="category_licences">Licences</string>
 
-    <string name="gpl3">GPLv3</string>
-    <string name="gpl2">GPLv2</string>
-    <string name="apache2">Apache-2.0</string>
+    <string name="gpl3" translatable="false">GPLv3</string>
+    <string name="gpl2" translatable="false">GPLv2</string>
+    <string name="apache2" translatable="false">Apache-2.0</string>
 </resources>
